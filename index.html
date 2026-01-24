@@ -3,22 +3,23 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Ram Mohan &mdash; Portfolio</title>
+	<title>Ram Mohan Kunwar | Technical Lead & Backend Architect</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Ram Mohan kunwar Portfolio website" />
-	<meta name="keywords" content="Ram Mohan kunwar, Portfolio website, Portfolio, Ram Mohan, ram mohan, Web Development, backend, python, AI, Machine Learning, Deep Learning" />
-	<meta name="author" content="Ram Mohan" />
+	<meta name="description" content="Portfolio of Ram Mohan Kunwar - Technical Lead, Backend Engineer, and Cloud Architect specializing in Python, AWS, and Scalable Distributed Systems.">
+	<meta name="keywords" content="Ram Mohan Kunwar, Technical Lead, Backend Engineer, Python Developer, AWS Architect, Serverless, Distributed Systems, FastAPI, Django, ETL, Data Engineering">
+	<meta name="author" content="Ram Mohan Kunwar">
 
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="Ram Mohan Kunwar | Technical Lead & Backend Architect">
+	<meta property="og:image" content="images/DSC_2744.JPG">
+	<meta property="og:url" content="https://rammohankunwar.com">
+	<meta property="og:site_name" content="Ram Mohan Kunwar Portfolio">
+	<meta property="og:description" content="Technical Lead and Backend Architect building scalable cloud-native systems.">
+	
+	<meta name="twitter:title" content="Ram Mohan Kunwar | Technical Lead & Backend Architect">
+	<meta name="twitter:image" content="images/DSC_2744.JPG">
+	<meta name="twitter:url" content="https://rammohankunwar.com">
+	<meta name="twitter:card" content="summary_large_image">
 
 	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
@@ -35,11 +36,43 @@
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- reCAPTCHA -->
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
+	<style>
+		/* Custom overrides for professional look */
+		.fh5co-heading h2 { margin-bottom: 20px; }
+		.fh5co-heading p { font-size: 18px; line-height: 1.6; color: #666; }
+		.service-list li { margin-bottom: 10px; font-size: 16px; }
+		.skill-category { margin-bottom: 30px; text-align: left; padding: 20px; background: #f9f9f9; border-radius: 4px; height: 100%; }
+		.skill-category h3 { font-size: 20px; font-weight: bold; margin-bottom: 15px; color: #ff9000; }
+		.skill-category ul { list-style: none; padding: 0; }
+		.skill-category li { margin-bottom: 8px; font-size: 16px; position: relative; padding-left: 20px; }
+		.skill-category li:before { content: "•"; color: #ff9000; position: absolute; left: 0; font-weight: bold; }
+		
+		/* Project grid fix */
+		.work { height: 350px; background-size: cover; background-position: center; display: block; position: relative; margin-bottom: 30px; }
+		.work .desc { position: absolute; top: 0; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.9); opacity: 0; transition: 0.3s; padding: 20px; overflow-y: auto; }
+		.work:hover .desc { opacity: 1; }
+		.work .desc h3 { color: #fff; font-size: 20px; margin-bottom: 10px; }
+		.work .desc span { display: block; color: #ccc; margin-bottom: 5px; font-size: 14px; }
+
+		/* Hero Image Alignment Fix */
+		.profile-thumb {
+			margin-top: 80px !important; /* Pushes the image down to visually center it */
+		}
+		
+		/* Contact Form Styles */
+		.form-control { box-shadow: none; background: transparent; border: 2px solid rgba(0, 0, 0, 0.1); height: 54px; font-size: 18px; font-weight: 300; }
+		.form-control:active, .form-control:focus { outline: none; box-shadow: none; border-color: #ff9000; }
+		.btn-primary { height: 54px; border: none; background: #ff9000; color: #fff; font-size: 16px; text-transform: uppercase; font-weight: 400; padding-left: 50px; padding-right: 50px; }
+		.btn-primary:hover, .btn-primary:active, .btn-primary:focus { background: #ff9000 !important; opacity: 0.9; }
+	</style>
 	</head>
 	<body>
 		
@@ -50,27 +83,46 @@
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center">
+				<div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12 text-center">
 					<div class="display-t js-fullheight">
 						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
 							<div class="profile-thumb" style="background: url(images/DSC_2744.JPG);"></div>
 							<h1><span>Ram Mohan Kunwar</span></h1>
-							<h3><span>Software Engineer / Curious Explorer</span></h3>
+							<h3><span>Technical Lead | Backend & Cloud Architect | Scalable Systems Builder</span></h3>
+							
+							<!-- Stats Row -->
+							<div class="row stats-row" style="margin-top: 40px; margin-bottom: 40px;">
+								<div class="col-md-4 col-sm-4 col-xs-4 stat-item">
+									<h2 style="color: #FF9000; font-weight: bold; margin-bottom: 5px;">+5</h2>
+									<span style="color: rgba(255,255,255,0.7); text-transform: uppercase; letter-spacing: 2px; font-size: 12px;">Years Exp</span>
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-4 stat-item">
+									<h2 style="color: #FF9000; font-weight: bold; margin-bottom: 5px;">+15</h2>
+									<span style="color: rgba(255,255,255,0.7); text-transform: uppercase; letter-spacing: 2px; font-size: 12px;">Projects</span>
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-4 stat-item">
+									<h2 style="color: #FF9000; font-weight: bold; margin-bottom: 5px;">Global</h2>
+									<span style="color: rgba(255,255,255,0.7); text-transform: uppercase; letter-spacing: 2px; font-size: 12px;">Clients</span>
+								</div>
+							</div>
+
 							<br>
-							<h3><span>A solution-driven Professional with adept Logical and	Analytical thinking.</span></h3>
+							<p style="font-size: 1.2em; max-width: 800px; margin: 0 auto; color: rgba(255,255,255,0.9);">
+								I’m Ram Mohan Kunwar, a Technical Lead and backend-focused software engineer with 5+ years of experience building cloud-native, high-throughput systems. I specialize in Python, AWS, serverless architectures, and distributed systems, working at the intersection of engineering depth and product impact.
+							</p>
 							<p>
-													<ul class="fh5co-social-icons">
-														<li><a href="https://www.linkedin.com/in/ram-mohan-kunwar/" target="_blank"><i class="icon-linkedin2"></i></a></li>
-														<li><a href="https://twitter.com/ramm8469" target="_blank"><i class="icon-twitter2"></i></a></li>
-														<li><a href="https://github.com/ramm8469" target="_blank" ><i class="icon-github-with-circle"></i></a></li>
-													</ul>
-													<div style="margin-top: 18px;">
-														<a href="https://drive.google.com/file/d/13QtkgUBiDCygq9jSMiAtwoxABoVypkOL/view?usp=sharing" target="_blank" style="text-decoration:none;">
-															<button style="background: #fff; color: #ff8800; border: none; border-radius: 25px; padding: 10px 28px; font-size: 1.1em; font-weight: bold; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: background 0.2s, color 0.2s; cursor: pointer;">
-																<i class="icon-download" style="margin-right:8px;"></i>Download Resume
-															</button>
-														</a>
-													</div>
+								<ul class="fh5co-social-icons">
+									<li><a href="https://www.linkedin.com/in/ram-mohan-kunwar/" target="_blank"><i class="icon-linkedin2"></i></a></li>
+									<li><a href="https://twitter.com/ramm8469" target="_blank"><i class="icon-twitter2"></i></a></li>
+									<li><a href="https://github.com/ramm8469" target="_blank" ><i class="icon-github-with-circle"></i></a></li>
+								</ul>
+								<div style="margin-top: 18px;">
+									<a href="https://drive.google.com/file/d/13QtkgUBiDCygq9jSMiAtwoxABoVypkOL/view?usp=sharing" target="_blank" style="text-decoration:none;">
+										<button style="background: #fff; color: #ff8800; border: none; border-radius: 25px; padding: 10px 28px; font-size: 1.1em; font-weight: bold; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: background 0.2s, color 0.2s; cursor: pointer;">
+											<i class="icon-download" style="margin-right:8px;"></i>Download Resume
+										</button>
+									</a>
+								</div>
 							</p>
 						</div>
 					</div>
@@ -82,12 +134,12 @@
 	<div id="fh5co-about" class="animate-box">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+				<div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12 text-center fh5co-heading">
 					<h2>About Me</h2>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-4">
+				<div class="col-md-4 col-sm-12 col-xs-12">
 					<ul class="info">
 						<li><span class="first-block">Full Name:</span><span class="second-block">Ram Mohan Kunwar</span></li>
 						<li><span class="first-block">Email:</span><span class="second-block">ramm8469@gmail.com</span></li>
@@ -95,27 +147,72 @@
 						<li><span class="first-block">Address:</span><span class="second-block">New Delhi, India</span></li>
 					</ul>
 				</div>
-				<div class="col-lg-8">
-					<h2>Hello There!</h2>
-					<p>There are 10 types of people in the world. Those who get Binary and those who don't..</p>
-					<p>Computer Technologies I have worked on :</p>
-					<ol>
-						<li>
-							AWS Solution Architect & Development - Some of common Services used : Lambda, DynamoDb, S3, Kinesis DataStream, API Gateway, Route53, Glue, Athena, Fargate
-						</li>
-						<li>
-							IaaC - Developed AWS infrastructures using Terraform
-						</li>
-						<li>
-							Web Development - BackEnd Using Python and Libraries like Chalice, Flask, Django and FastAPI
-						</li>
-						<li>
-							Deep Learning : Supervised Learning using Keras Sequential and Functional Functions
-						</li>
-						<li>
-							DataBases : SQL(MySQL, MariaDB, SQLite), NoSQL(AWS DynamoDB, Mongo)
-						</li>
-					</ol>
+				<div class="col-md-8 col-sm-12 col-xs-12">
+					<p>I am a Technical Lead and Senior Software Engineer based in New Delhi, India, with a strong background in backend engineering, cloud architecture, and data-intensive systems. Over the years, I’ve worked across startups and enterprise environments, contributing to systems that handle millions of events, real-time device data, and mission-critical telecom workloads.</p>
+					
+					<p>My core strength lies in Python-based backend development using frameworks such as FastAPI, Django, Flask, and AWS Chalice, combined with deep hands-on experience in AWS services including Lambda, API Gateway, DynamoDB, Kinesis, and S3. I design systems with a strong focus on scalability, fault tolerance, observability, and cost efficiency.</p>
+					
+					<p>Currently working as a Technical Lead, I am responsible not only for implementation but also for system design, architecture decisions, code quality, and mentoring junior engineers. I enjoy translating vague business requirements into well-defined technical solutions, ensuring they hold up in real-world production environments.</p>
+					
+					<p>Beyond my day job, I actively explore AI/ML systems, data platforms, and product-driven engineering, with a long-term goal of building scalable products and independent revenue streams.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-features" class="animate-box">
+		<div class="container">
+			<div class="services-padding">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12 text-center fh5co-heading">
+						<h2>What I Do</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+						<div class="feature-left">
+							<span class="icon">
+								<i class="icon-layers"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>Backend & API Engineering</h3>
+								<p>Design and build high-performance REST APIs. Python-first development with FastAPI, Django, Flask. Authentication, authorization, rate limiting, and API security. SQL & NoSQL database design.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+						<div class="feature-left">
+							<span class="icon">
+								<i class="icon-cloud"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>Cloud & Distributed Systems</h3>
+								<p>Serverless and microservices architectures on AWS. Event-driven systems using Kinesis and message queues. Infrastructure automation using Terraform. High-availability setups.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+						<div class="feature-left">
+							<span class="icon">
+								<i class="icon-linegraph"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>Data & Analytics Pipelines</h3>
+								<p>ETL pipelines for telecom and operational data. Large-scale event ingestion and processing. Reporting systems and data aggregation. Pandas, NumPy, and analytics tooling.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+						<div class="feature-left">
+							<span class="icon">
+								<i class="icon-strategy"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>Technical Leadership</h3>
+								<p>Architecture reviews and system design. Mentoring junior and mid-level engineers. Code reviews and engineering best practices. Bridging product requirements with execution.</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -124,27 +221,25 @@
 	<div id="fh5co-resume" class="fh5co-bg-color">
 		<div class="container">
 			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>My Resume</h2>
+				<div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12 text-center fh5co-heading">
+					<h2>Experience Snapshot</h2>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-12 col-md-offset-0">
 					<ul class="timeline">
 						<li class="timeline-heading text-center animate-box">
-							<div><h3>Work Experience</h3></div>
+							<div><h3>Work History</h3></div>
 						</li>
 						<li class="animate-box timeline-inverted">
 							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
 									<h3 class="timeline-title">Technical Lead</h3>
-									<span class="company">Eseye  - 2025 - Current</span>
+									<span class="company">Eseye (2025 – Present)</span>
 								</div>
 								<div class="timeline-body">
-									<p>
-										Experienced backend technical lead with a strong focus on AI-driven solutions. Expert in Python and AWS, specializing in building scalable, intelligent systems. Leads teams in designing and deploying cloud-native architectures that integrate machine learning to power data-driven applications
-									</p>
+									<p>Leading backend and cloud architecture for telecom and IoT platforms. Owning system design, performance optimization, and team mentorship.</p>
 								</div>
 							</div>
 						</li>
@@ -153,12 +248,10 @@
 							<div class="timeline-panel">
 								<div class="timeline-heading">
 									<h3 class="timeline-title">Senior Software Engineer</h3>
-									<span class="company">Eseye  - 2022 - 2024</span>
+									<span class="company">Eseye (2022 – 2024)</span>
 								</div>
 								<div class="timeline-body">
-									<p>
-										Developed and Engineered distributed systems at scale, based on AWS cloud infrastructure to handle millions of Sim and Devices
-									</p>
+									<p>Built distributed backend systems processing large-scale device, SIM, and location data. Focused on AWS serverless services and high-throughput APIs.</p>
 								</div>
 							</div>
 						</li>
@@ -167,98 +260,83 @@
 							<div class="timeline-panel">
 								<div class="timeline-heading">
 									<h3 class="timeline-title">Junior Associate</h3>
-									<span class="company">Unthinkable Solutions LLP - 2020 - 2022</span>
+									<span class="company">Unthinkable Solutions LLP (2020 – 2022)</span>
 								</div>
 								<div class="timeline-body">
-									<p>Started My Professional Journey from here</p>
-									<p>Gained good experience in designing, building, testing and
-										deploying high performance, reusable, and reliable
-										Restful-APIs</p>
-									<p>Experience with ETL Systems and Airflow DAGS</p>
+									<p>Worked on backend APIs, ETL pipelines, and analytics platforms for logistics and enterprise clients.</p>
 								</div>
 							</div>
 						</li>
-						
 						<br>
 						<li class="timeline-heading text-center animate-box">
 							<div><h3>Education</h3></div>
 						</li>
-						<!-- <li class="timeline-inverted animate-box">
-							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Masters Degree</h3>
-									<span class="company">University Name - 2007 - 2009</span>
-								</div>
-								<div class="timeline-body">
-									<p>Far far away, behind the word mountains, they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-								</div>
-							</div>
-						</li> -->
 						<li class="animate-box timeline-unverted">
 							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
-									<h3 class="timeline-title">Bachelors Degree</h3>
-									<span class="company">AKTU - 2016 - 2020</span>
-								</div>
-								<div class="timeline-body">
-									<p>Bachelors in Technology : Computer Science and Engineering</p>
-									<p>Learned and practiced computer science fundamentals, problem
-										solving and	engineering	techniques.</p>
+									<h3 class="timeline-title">B.Tech in Computer Science & Engineering</h3>
+									<span class="company">AKTU (2016–2020)</span>
 								</div>
 							</div>
-			    	</ul>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
-	
 
-	<div id="fh5co-features" class="animate-box">
+	<div id="fh5co-work" class="fh5co-bg-dark">
 		<div class="container">
-			<div class="services-padding">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2>My Services</h2>
-					</div>
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12 text-center fh5co-heading">
+					<h2>Selected Projects</h2>
 				</div>
-				<div class="row">
-					<div class="col-md-4 text-center">
-						<div class="feature-left">
-							<span class="icon">
-								<i class="icon-paintbrush"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Web Development</h3>
-								<p>Preferabley backend development with Python and Framework likes Chalice, FastAPI, Flask and Django.</p>
-							</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center col-padding animate-box">
+					<a href="#" class="work" style="background-image: url(images/location.jpg);">
+						<div class="desc">
+							<h3>IoT Location Services</h3>
+							<span>High-throughput location tracking system for IoT devices.</span>
+							<span>Processes 400K+ location feeds/minute from multiple providers.</span>
+							<span>Scalable to handle 4G network triangulation.</span>
+							<span>Built for high availability and low latency.</span>
 						</div>
-					</div>
-
-					<div class="col-md-4 text-center">
-						<div class="feature-left">
-							<span class="icon">
-								<i class="icon-briefcase"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Cloud Architect</h3>
-								<p>Preferabley with AWS: Desiging and developing solutions driven by AWS services using cloud agnostic tools like Terraform.</p>
-							</div>
+					</a>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center col-padding animate-box">
+					<a href="#" class="work" style="background-image: url(images/reporting.png);">
+						<div class="desc">
+							<h3>Unified Reporting System</h3>
+							<span>Dynamic ETL-based reporting engine.</span>
+							<span>Transforms diverse data sources into CSV/PDF/JSON formats.</span>
+							<span>Automated scheduling and delivery.</span>
+							<span>Ensures data consistency across operational reports.</span>
 						</div>
-
-					</div>
-					<div class="col-md-4 text-center">
-						<div class="feature-left">
-							<span class="icon">
-								<i class="icon-search"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Analytics and Reasoning</h3>
-								<p>Case Studies with analytical tools like numpy, pandas and matplotlib.</p>
-							</div>
+					</a>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center col-padding animate-box">
+					<a href="#" class="work" style="background-image: url(images/cdr.png);">
+						<div class="desc">
+							<h3>Telecom CDR Pipeline</h3>
+							<span>Mission-critical pipeline for Call Detail Records.</span>
+							<span>Ingests and processes voice, data, and SMS records.</span>
+							<span>Handles massive daily volumes for billing and analytics.</span>
+							<span>Built with fault tolerance and data integrity in mind.</span>
 						</div>
-					</div>
+					</a>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center col-padding animate-box">
+					<a href="#" class="work" style="background-image: url(images/freight_intelligent.jpg);">
+						<div class="desc">
+							<h3>Freight Intelligence Portal</h3>
+							<span>Maritime rate intelligence and analytics platform.</span>
+							<span>Aggregates shipping rates for cost optimization.</span>
+							<span>Provides market trend analysis and custom reporting.</span>
+							<span>Helps clients identify savings in shipping logistics.</span>
+						</div>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -267,257 +345,160 @@
 	<div id="fh5co-skills" class="animate-box">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Skills</h2>
+				<div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12 text-center fh5co-heading">
+					<h2>Tools & Technologies</h2>
+					<p>My technical stack is centered around Python and AWS, with a strong emphasis on building scalable, maintainable, and observable systems.</p>
 				</div>
 			</div>
-			<div class="row row-pb-md">
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="90"><span><strong>Python</strong>90%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="80"><span><strong>MySQL</strong>80%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="90"><span><strong>AWS at Associate Architect Level</strong>90%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="85"><span><strong>Terraform</strong>85%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="90"><span><strong>Pandas</strong>90%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="95"><span><strong>HTML5</strong>95%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="40"><span><strong>CSS3</strong>40%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="50"><span><strong>React</strong>50%</span></div>
-				</div>
-			</div>
-			<!-- <div class="row">
-				<div class="col-md-6">
-					<div class="progress-wrap">
-						<h3><span class="name-left">HTML5/CSS3</span><span class="value-right">95%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
-						  </div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">WordPress</span><span class="value-right">90%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-2 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
-						  </div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">PHP</span><span class="value-right">80%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-3 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
-						  </div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">Java</span><span class="value-right">85%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-4 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
-						  </div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="progress-wrap">
-						<h3><span class="name-left">Design</span><span class="value-right">100%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-5 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-						  </div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">Ruby</span><span class="value-right">70%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-striped active" role="progressbar"
-						  aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-						  </div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">Python</span><span class="value-right">85%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
-						  </div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">jQuery</span><span class="value-right">75%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-3 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
-						  </div>
-						</div>
-					</div>
-				</div>
-			</div> -->
-		</div>
-	</div>
-
-	<div id="fh5co-work" class="fh5co-bg-dark">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Work/Projects</h2>
-				</div>
-			</div>
+			
 			<div class="row">
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="#" class="work" style="background-image: url(images/location.jpg);">
-						<div class="desc">
-							<h3>@Eseye : Location</h3>
-							<span>Location  is a service related to providing location for Sims</span>
-							<span>Using MNC, MCC, LAC and CI values from different location providers</span>
-							<span>Impact: Ability to handle 400K location feeds per minute</span>
-							<span>Impact: Ability to deliver location for 4G networks too.</span>
-							<span>Impact: API's Ability to handle 80K requests per day</span>
+				<div class="col-md-12">
+					<div class="tools-grid">
+						<!-- Languages & Frameworks -->
+						<div class="tool-card">
+							<i class="icon-code"></i>
+							<span>Python</span>
 						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="#" class="work" style="background-image: url(images/reporting.png);">
-						<div class="desc">
-							<h3>@Eseye: Reporting Sysmtem</h3>
-							<span>The ETL-based reporting system with multi-format output is a dynamic solution designed to efficiently extract, transform, and load data from diverse sources while providing flexibility in delivering outputs in various formats such as CSV, PDF, and JSON. This system seamlessly integrates the ETL process, ensuring data consistency and accuracy before presenting it in user-specified formats to meet diverse reporting needs.</span>
+						<div class="tool-card">
+							<i class="icon-server"></i>
+							<span>FastAPI</span>
 						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="#" class="work" style="background-image: url(images/cdr.png);">
-						<div class="desc">
-							<h3>@Eseye: CDR-Pipelines</h3>
-							<span>The Call Detail Record (CDR) pipeline system is a specialized infrastructure designed to efficiently capture, process, and analyze telecommunication data generated by voice, data, and messaging services. This system operates as a comprehensive pipeline, handling the collection, transformation, storage, and analysis of CDRs, enabling telecom companies to derive valuable insights for operational and strategic purposes.</span>
+						<div class="tool-card">
+							<i class="icon-globe"></i>
+							<span>Django</span>
 						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="#" class="work" style="background-image: url(images/freight_intelligent.jpg);">
-						<div class="desc">
-							<h3>@Unthinkable: Freight Intelligence Portal</h3>
-							<span>It is a maritime rate intelligence project. The objective of this project is to build such an application that get all
-								these rates from all such clients who pay to ship their product and
-								do calculations in order to create a custom rate intelligence report
-								for each client that can help them figure out where can they save
-								their money, what is the market trend , how are things changing in
-								terms of pricing in the shipping world.</span>
+						<div class="tool-card">
+							<i class="icon-database"></i>
+							<span>PostgreSQL</span>
 						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="https://snipurl.in/" target="_blank" class="work" style="background-image: url(images/snipurl.png);">
-						<div class="desc">
-							<h3>Hobby Project : SnipUrl.in</h3>
-							<span>The Comprehensive URL Shortener Platform stands out as a versatile tool, offering more than just URL shortening by providing advanced features such as custom QR code generation and a Link-in-Bio capability, reminiscent of popular services like Bitly. This platform combines simplicity and functionality to empower users with a range of tools for optimizing link sharing and tracking.</span>
+						<div class="tool-card">
+							<i class="icon-terminal"></i>
+							<span>Bash</span>
 						</div>
-					</a>
+
+						<!-- Cloud -->
+						<div class="tool-card">
+							<i class="icon-cloud"></i>
+							<span>AWS Lambda</span>
+						</div>
+						<div class="tool-card">
+							<i class="icon-cog"></i>
+							<span>API Gateway</span>
+						</div>
+						<div class="tool-card">
+							<i class="icon-layers"></i>
+							<span>DynamoDB</span>
+						</div>
+						<div class="tool-card">
+							<i class="icon-flow-merge"></i>
+							<span>Kinesis</span>
+						</div>
+						
+						<!-- Data & DevOps -->
+						<div class="tool-card">
+							<i class="icon-bar-graph"></i>
+							<span>Pandas</span>
+						</div>
+						<div class="tool-card">
+							<i class="icon-download"></i>
+							<span>Airflow</span>
+						</div>
+						<div class="tool-card">
+							<i class="icon-upload"></i>
+							<span>Docker</span>
+						</div>
+						<div class="tool-card">
+							<i class="icon-box"></i>
+							<span>Terraform</span>
+						</div>
+						<div class="tool-card">
+							<i class="icon-git"></i>
+							<span>Git</span>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div id="fh5co-blog">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Posts/ Articles</h2>
-					<p>Currtently writing on <a href="https://tronlab.in/" target="_blank">TronLab</a></p>
-				</div>
-			</div>
-		</div>
-	</div>
-	
 	<div id="fh5co-started" class="fh5co-bg-dark">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Hire Me!</h2>
-					<p>Dedicated and results-driven professional with a proven track record in Software Engineering. I bring a potent blend of Web Development, ETL pipelines and DeepLearning, coupled with a passion for development of distributed system at scale.</p>
-					<p>My ability to curious learning and reasoning has consistently delivered impactful results, and I am eager to leverage these skills to contribute to the success of your team. With a commitment to excellence, adaptability, and a collaborative mindset, I am poised to make significant contributions to the organization and thrive in a dynamic, growth-oriented environment.</p>
-					<p><a href="mailto:ramm8469@gmail.com" class="btn btn-default btn-lg">Contact Us</a></p>
+				<div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12 text-center fh5co-heading">
+					<h2>My Philosophy</h2>
+					<p>I believe great engineering is not just about writing code — it’s about designing systems that survive real-world traffic, failures, and change. I value clean architecture, pragmatic decision-making, and continuous learning. I’m especially interested in roles that combine deep technical challenges with long-term product ownership.</p>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div id="fh5co-consult">
-		<div class="video fh5co-video" style="background-image: url(images/cover_bg_1.jpg);">
-			<div class="overlay"></div>
-		</div>
-		<div class="choose animate-box">
-			<h2>Contact</h2>
-			<form id="contact-form" action="https://api.web3forms.com/submit"  method="POST">
+	<div id="fh5co-contact" class="animate-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12 text-center fh5co-heading">
+					<h2>LET'S WORK TOGETHER</h2>
+					<p>Have a project in mind or want to discuss backend architecture? Send me a message.</p>
+				</div>
+			</div>
+			<form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
 				<input type="hidden" name="access_key" value="ff3150eb-d7c6-4012-aea1-7663f82a23ba">
-				<div class="row form-group">
-					<div class="col-md-6">
-						<input type="text" required="" id="fname" name="fname" class="form-control" placeholder="Your firstname">
-					</div>
-				</div>
-				<div class="row form-group">
-					<div class="col-md-6">
-						<input type="text" id="lname" name="lname" class="form-control" placeholder="Your lastname">
-					</div>
-				</div>
-
-				<div class="row form-group">
-					<div class="col-md-12">
-						<input type="email" id="email" name="email"  required="" class="form-control" placeholder="Your email address">
-					</div>
-				</div>
-
-				<div class="row form-group">
-					<div class="col-md-12">
-						<input type="text" id="subject" name="subject" required="" class="form-control" placeholder="Your subject of this message">
-					</div>
-				</div>
-
-				<div class="row form-group">
-					<div class="col-md-12">
-						<textarea name="message" id="message" required="" cols="30" rows="10" class="form-control" placeholder="Say something about us"></textarea>
-					</div>
-				</div>
-				<input type="hidden" name="from_name" value="contact-form-rammohankunwar.com">
+				<input type="hidden" name="from_name" value="Portfolio Contact">
 				<input type="hidden" name="redirect" value="https://web3forms.com/success">
 				<input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-				 <!-- hCaptcha Spam Protection -->
-				 <div class="h-captcha" data-captcha="true" required=""></div>
-				<div class="form-group">
-					<input type="submit" value="Send Message" class="btn btn-primary">
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<input type="text" name="firstname" class="form-control" placeholder="First Name" required>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<input type="text" name="lastname" class="form-control" placeholder="Last Name" required>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-group">
+							<input type="email" name="email" class="form-control" placeholder="Email Address" required>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-group">
+							<input type="text" name="subject" class="form-control" placeholder="Subject" required>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-group">
+							<textarea name="message" class="form-control" id="" cols="30" rows="7" placeholder="Tell me about your project..." required></textarea>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-group">
+							<!-- hCaptcha Spam Protection -->
+							<div class="h-captcha" data-captcha="true"></div>
+						</div>
+						<div class="form-group">
+							<input type="submit" value="Send Message" class="btn btn-primary">
+						</div>
+					</div>
 				</div>
-			</form>	
-			<!-- Required for hCaptcha -->
-			<script src="https://web3forms.com/client/script.js" async defer></script>
+			</form>
 		</div>
 	</div>
-	
+
 	<div id="fh5co-footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12">
-					<p>&copy; rammohankunwar.com  All Rights Reserved.</p>
+				<div class="col-md-12 text-center">
+					<p>&copy; 2026 Ram Mohan Kunwar. All Rights Reserved.</p>
 				</div>
 			</div>
 		</div>
 	</div>
-
+	
 	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
 	
 	<!-- jQuery -->
@@ -532,26 +513,23 @@
 	<script src="js/jquery.stellar.min.js"></script>
 	<!-- Easy PieChart -->
 	<script src="js/jquery.easypiechart.min.js"></script>
-	<!-- Google Map -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
-	<script src="js/google_map.js"></script>
-	
 	<!-- Main -->
 	<script src="js/main.js"></script>
+	<!-- Web3Forms Script -->
+	<script src="https://web3forms.com/client/script.js" async defer></script>
+	
 	<script>
 		const form = document.getElementById('contact-form');
 		
 		form.addEventListener('submit', function(e) {
-		
-			const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
-		
-			if (!hCaptcha) {
+			const hCaptcha = form.querySelector('textarea[name=h-captcha-response]');
+			if (hCaptcha && !hCaptcha.value) {
 				e.preventDefault();
 				alert("Please fill out captcha field")
 				return
 			}
 		});
-		</script>
+	</script>
 	<script>
 		window.onload = function() {
 			// Reset the form fields when the page loads
@@ -559,6 +537,8 @@
 		};
 	</script>
 
+	<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"9e58c8a84d674b539dd0754d63095855","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+
+
 	</body>
 </html>
-
