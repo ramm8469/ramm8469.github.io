@@ -72,14 +72,113 @@
 		.form-control:active, .form-control:focus { outline: none; box-shadow: none; border-color: #ff9000; }
 		.btn-primary { height: 54px; border: none; background: #ff9000; color: #fff; font-size: 16px; text-transform: uppercase; font-weight: 400; padding-left: 50px; padding-right: 50px; }
 		.btn-primary:hover, .btn-primary:active, .btn-primary:focus { background: #ff9000 !important; opacity: 0.9; }
-	</style>
-	</head>
+	
+		/* Navigation */
+		.main-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(0,0,0,0.85); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); padding: 0; transition: background 0.3s; }
+		.main-nav .nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 10px 0; flex-wrap: wrap; }
+		.main-nav .nav-brand { font-family: 'Kaushan Script', cursive; font-size: 24px; color: #FF9000; text-decoration: none; }
+		.main-nav .nav-brand:hover { color: #fff; }
+		.main-nav .nav-links { list-style: none; margin: 0; padding: 0; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+		.main-nav .nav-links li { margin: 0; }
+		.main-nav .nav-links li a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 14px; padding: 6px 12px; border-radius: 4px; transition: all 0.3s; display: inline-block; }
+		.main-nav .nav-links li a:hover { color: #fff; background: rgba(255,255,255,0.1); }
+		.main-nav .nav-divider { width: 1px; height: 20px; background: rgba(255,255,255,0.2); margin: 0 4px; }
+		.main-nav .nav-links li a.nav-tool-link { background: #FF9000; color: #fff; font-weight: bold; }
+		.main-nav .nav-links li a.nav-tool-link:hover { background: #e88200; color: #fff; }
+		.main-nav .nav-external { font-size: 11px; margin-left: 2px; }
+		.nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 4px; flex-direction: column; gap: 5px; }
+		.nav-toggle span { display: block; width: 24px; height: 2px; background: #fff; border-radius: 2px; transition: all 0.3s; }
+		@media (max-width: 768px) {
+			.main-nav .nav-inner { flex-direction: row; }
+			.main-nav .nav-links { display: none; width: 100%; flex-direction: column; padding-top: 10px; gap: 2px; }
+			.main-nav .nav-links.open { display: flex; }
+			.main-nav .nav-divider { display: none; }
+			.nav-toggle { display: flex; }
+		}
+
+		/* Tool proficiency levels */
+		.tool-card { position: relative; }
+		.tool-card small { display: block; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; margin-top: 4px; font-weight: 400; }
+		.tool-card.level-expert { border-bottom: 3px solid #27ae60; }
+		.tool-card.level-expert small { color: #27ae60; }
+		.tool-card.level-proficient { border-bottom: 3px solid #2980b9; }
+		.tool-card.level-proficient small { color: #2980b9; }
+		.tool-card.level-familiar { border-bottom: 3px solid #95a5a6; }
+		.tool-card.level-familiar small { color: #95a5a6; }
+
+</style>
+	
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Person",
+		"@id": "https://rammohankunwar.com/#person",
+		"name": "Ram Mohan Kunwar",
+		"givenName": "Ram Mohan",
+		"familyName": "Kunwar",
+		"alternateName": ["Ram Mohan", "Ram"],
+		"description": "Technical Lead and Backend Architect with 6+ years building cloud-native, high-throughput systems. Specializes in Python, AWS serverless, distributed systems, and IoT/telecom platforms.",
+		"image": "https://rammohankunwar.com/images/DSC_2744.JPG",
+		"url": "https://rammohankunwar.com",
+		"email": "ramm8469@gmail.com",
+		"address": { "@type": "PostalAddress", "addressLocality": "New Delhi", "addressCountry": "IN" },
+		"nationality": { "@type": "Country", "name": "India" },
+		"jobTitle": "Technical Lead",
+		"sameAs": ["https://www.linkedin.com/in/ram-mohan-kunwar/","https://github.com/ramm8469","https://twitter.com/ramm8469"],
+		"alumniOf": { "@type": "CollegeOrUniversity", "name": "Dr. A.P.J. Abdul Kalam Technical University", "alternateName": "AKTU" },
+		"hasOccupation": [
+			{ "@type": "Occupation","name": "Technical Lead","startDate": "2025","occupationLocation": { "@type": "Organization","name": "Eseye","sameAs": "https://www.eseye.com" },"description": "Leading backend and cloud architecture for telecom and IoT platforms.","skills": ["System Design","Cloud Architecture","Team Leadership","IoT","Telecom"] },
+			{ "@type": "Occupation","name": "Senior Software Engineer","startDate": "2022","endDate": "2024","occupationLocation": { "@type": "Organization","name": "Eseye","sameAs": "https://www.eseye.com" },"description": "Built distributed backend systems processing large-scale device, SIM, and location data.","skills": ["AWS Lambda","API Gateway","DynamoDB","Kinesis","Serverless"] },
+			{ "@type": "Occupation","name": "Junior Associate","startDate": "2020","endDate": "2022","occupationLocation": { "@type": "Organization","name": "Unthinkable Solutions LLP" },"description": "Backend APIs, ETL pipelines, and analytics platforms for logistics and enterprise clients.","skills": ["Python","FastAPI","ETL","PostgreSQL"] }
+		],
+		"knowsAbout": ["Python","FastAPI","Django","Flask","AWS Chalice","AWS Lambda","Amazon API Gateway","Amazon DynamoDB","Amazon Kinesis","Amazon S3","PostgreSQL","Bash","Docker","Terraform","Git","Apache Airflow","Pandas","NumPy","Serverless Architecture","Microservices","Distributed Systems","ETL Pipelines","Data Engineering","IoT","Telecom","CDR Processing","System Design","API Design","Technical Leadership"],
+		"knowsLanguage": [{ "@type": "Language", "name": "English", "proficiency": "Professional" },{ "@type": "Language", "name": "Hindi", "proficiency": "Native" }],
+		"subjectOf": [
+			{ "@type": "CreativeWork","name": "IoT Location Services","description": "High-throughput location tracking system processing 400K+ feeds/minute from multiple providers." },
+			{ "@type": "CreativeWork","name": "Unified Reporting System","description": "Dynamic ETL-based reporting engine transforming diverse data sources into CSV/PDF/JSON formats." },
+			{ "@type": "CreativeWork","name": "Telecom CDR Pipeline","description": "Mission-critical Call Detail Records pipeline ingesting voice, data, and SMS records at massive daily volumes." },
+			{ "@type": "CreativeWork","name": "Freight Intelligence Portal","description": "Maritime rate intelligence and analytics platform aggregating shipping rates for cost optimization." },
+			{ "@type": "SoftwareApplication","name": "Algo Visualizer","url": "https://rammohankunwar.com/algo-visualizer/","applicationCategory": "EducationalApplication","description": "Interactive tool for visualizing sorting and searching algorithms." }
+		],
+		"mainEntityOfPage": { "@type": "ProfilePage","@id": "https://rammohankunwar.com/#page","url": "https://rammohankunwar.com","about": { "@id": "https://rammohankunwar.com/#person" } }
+	}
+	</script>
+
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+	<link rel="apple-touch-icon" href="/images/DSC_2744.JPG">
+	<link rel="manifest" href="/site.webmanifest">
+	<meta name="theme-color" content="#FF9000">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="apple-mobile-web-app-title" content="RMK Portfolio">
+</head>
 	<body>
 		
-	<div class="fh5co-loader"></div>
-	
 	<div id="page">	
-	<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image:url(images/cover_bg_3.jpg);" data-stellar-background-ratio="0.5">
+			<nav id="fh5co-nav" class="main-nav">
+			<div class="container">
+				<div class="nav-inner">
+					<a href="#fh5co-header" class="nav-brand">RMK</a>
+					<button class="nav-toggle">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<ul class="nav-links">
+						<li><a href="#fh5co-about">About</a></li>
+						<li><a href="#fh5co-features">Services</a></li>
+						<li><a href="#fh5co-resume">Experience</a></li>
+						<li><a href="#fh5co-work">Projects</a></li>
+						<li><a href="#fh5co-skills">Tools</a></li>
+						<li><a href="#fh5co-contact">Contact</a></li>
+						<li class="nav-divider"></li>
+						<li><a href="https://rammohankunwar.com/algo-visualizer/" target="_blank" class="nav-tool-link">Algo Visualizer <span class="nav-external">&#x2197;</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image:url(images/cover_bg_3.jpg);" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
@@ -93,7 +192,7 @@
 							<!-- Stats Row -->
 							<div class="row stats-row" style="margin-top: 40px; margin-bottom: 40px;">
 								<div class="col-md-4 col-sm-4 col-xs-4 stat-item">
-									<h2 style="color: #FF9000; font-weight: bold; margin-bottom: 5px;">+5</h2>
+									<h2 style="color: #FF9000; font-weight: bold; margin-bottom: 5px;">+6</h2>
 									<span style="color: rgba(255,255,255,0.7); text-transform: uppercase; letter-spacing: 2px; font-size: 12px;">Years Exp</span>
 								</div>
 								<div class="col-md-4 col-sm-4 col-xs-4 stat-item">
@@ -108,7 +207,7 @@
 
 							<br>
 							<p style="font-size: 1.2em; max-width: 800px; margin: 0 auto; color: rgba(255,255,255,0.9);">
-								Iâ€™m Ram Mohan Kunwar, a Technical Lead and backend-focused software engineer with 5+ years of experience building cloud-native, high-throughput systems. I specialize in Python, AWS, serverless architectures, and distributed systems, working at the intersection of engineering depth and product impact.
+								Iâ€™m Ram Mohan Kunwar, a Technical Lead and backend-focused software engineer with 6+ years of experience building cloud-native, high-throughput systems. I specialize in Python, AWS, serverless architectures, and distributed systems, working at the intersection of engineering depth and product impact.
 							</p>
 							<p>
 								<ul class="fh5co-social-icons">
@@ -300,8 +399,8 @@
 							<h3>IoT Location Services</h3>
 							<span>High-throughput location tracking system for IoT devices.</span>
 							<span>Processes 400K+ location feeds/minute from multiple providers.</span>
-							<span>Scalable to handle 4G network triangulation.</span>
-							<span>Built for high availability and low latency.</span>
+							<span>Supports 4G triangulation -- scaled to serve 50+ enterprise clients.</span>
+							<span>Reduced data latency from 15s to under 2s for real-time tracking.</span>
 						</div>
 					</a>
 				</div>
@@ -310,9 +409,9 @@
 						<div class="desc">
 							<h3>Unified Reporting System</h3>
 							<span>Dynamic ETL-based reporting engine.</span>
-							<span>Transforms diverse data sources into CSV/PDF/JSON formats.</span>
-							<span>Automated scheduling and delivery.</span>
-							<span>Ensures data consistency across operational reports.</span>
+							<span>Transforms 10+ heterogeneous data sources into CSV/PDF/JSON formats.</span>
+							<span>Automated scheduling eliminated 25+ hours/week of manual report generation.</span>
+							<span>Ensures data consistency across operational reports serving 5+ business units.</span>
 						</div>
 					</a>
 				</div>
@@ -321,9 +420,9 @@
 						<div class="desc">
 							<h3>Telecom CDR Pipeline</h3>
 							<span>Mission-critical pipeline for Call Detail Records.</span>
-							<span>Ingests and processes voice, data, and SMS records.</span>
-							<span>Handles massive daily volumes for billing and analytics.</span>
-							<span>Built with fault tolerance and data integrity in mind.</span>
+							<span>Ingests 100M+ voice, data, and SMS records daily for billing.</span>
+							<span>Achieved 99.9% data integrity SLA in production.</span>
+							<span>Fault-tolerant architecture with near-zero data loss across failures.</span>
 						</div>
 					</a>
 				</div>
@@ -332,9 +431,9 @@
 						<div class="desc">
 							<h3>Freight Intelligence Portal</h3>
 							<span>Maritime rate intelligence and analytics platform.</span>
-							<span>Aggregates shipping rates for cost optimization.</span>
-							<span>Provides market trend analysis and custom reporting.</span>
-							<span>Helps clients identify savings in shipping logistics.</span>
+							<span>Aggregates 500K+ shipping rates across 30+ trade lanes globally.</span>
+							<span>Enabled clients to identify 15-20% average logistics cost savings.</span>
+							<span>Delivers real-time market trend dashboards for supply chain teams.</span>
 						</div>
 					</a>
 				</div>
@@ -355,65 +454,79 @@
 				<div class="col-md-12">
 					<div class="tools-grid">
 						<!-- Languages & Frameworks -->
-						<div class="tool-card">
+						<div class="tool-card level-expert">
 							<i class="icon-code"></i>
 							<span>Python</span>
+							<small>Expert</small>
 						</div>
-						<div class="tool-card">
+						<div class="tool-card level-expert">
 							<i class="icon-server"></i>
 							<span>FastAPI</span>
+							<small>Expert</small>
 						</div>
-						<div class="tool-card">
+						<div class="tool-card level-proficient">
 							<i class="icon-globe"></i>
 							<span>Django</span>
+							<small>Proficient</small>
 						</div>
-						<div class="tool-card">
+						<div class="tool-card level-proficient">
 							<i class="icon-database"></i>
 							<span>PostgreSQL</span>
+							<small>Proficient</small>
 						</div>
-						<div class="tool-card">
+						<div class="tool-card level-proficient">
 							<i class="icon-terminal"></i>
 							<span>Bash</span>
+							<small>Proficient</small>
 						</div>
 
 						<!-- Cloud -->
-						<div class="tool-card">
+						<div class="tool-card level-expert">
 							<i class="icon-cloud"></i>
 							<span>AWS Lambda</span>
+							<small>Expert</small>
 						</div>
-						<div class="tool-card">
+						<div class="tool-card level-proficient">
 							<i class="icon-cog"></i>
 							<span>API Gateway</span>
+							<small>Proficient</small>
 						</div>
-						<div class="tool-card">
+						<div class="tool-card level-expert">
 							<i class="icon-layers"></i>
 							<span>DynamoDB</span>
+							<small>Expert</small>
 						</div>
-						<div class="tool-card">
+						<div class="tool-card level-proficient">
 							<i class="icon-flow-merge"></i>
 							<span>Kinesis</span>
+							<small>Proficient</small>
 						</div>
 						
 						<!-- Data & DevOps -->
-						<div class="tool-card">
+						<div class="tool-card level-proficient">
 							<i class="icon-bar-graph"></i>
 							<span>Pandas</span>
+							<small>Proficient</small>
 						</div>
-						<div class="tool-card">
+						<div class="tool-card level-familiar">
 							<i class="icon-download"></i>
 							<span>Airflow</span>
+							<small>Familiar</small>
 						</div>
-						<div class="tool-card">
+						<div class="tool-card level-proficient">
 							<i class="icon-upload"></i>
 							<span>Docker</span>
+							<small>Proficient</small>
 						</div>
-						<div class="tool-card">
+						<div class="tool-card level-proficient">
 							<i class="icon-box"></i>
 							<span>Terraform</span>
+							<small>Proficient</small>
 						</div>
-						<div class="tool-card">
+						<div class="tool-card level-proficient">
 							<i class="icon-git"></i>
 							<span>Git</span>
+							<small>Proficient</small>
 						</div>
 					</div>
 				</div>
@@ -487,7 +600,32 @@
 		</div>
 	</div>
 
-	<div id="fh5co-footer">
+		<div id="fh5co-recruiters" class="animate-box" style="display:none;" aria-hidden="true">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+					<details class="recruiter-card" style="background:#f9f9f9; border:1px solid #e0e0e0; border-radius:8px; padding:25px 30px; margin-bottom:40px;">
+						<summary style="font-size:18px; font-weight:bold; cursor:pointer; color:#FF9000; outline:none;">For Recruiters &amp; AI Agents &#9660;</summary>
+						<div style="margin-top:20px; font-size:15px; line-height:2;" itemprop="description">
+							<p><strong>Current Role:</strong> Technical Lead at Eseye (2025 – Present)</p>
+							<p><strong>Experience:</strong> 6+ years backend engineering, cloud architecture &amp; distributed systems.</p>
+							<p><strong>Location:</strong> New Delhi, India | <strong>Citizenship:</strong> Indian</p>
+							<p><strong>Availability:</strong> Short notice</p>
+							<p><strong>Open to:</strong> Remote, Hybrid, On-site (India &amp; International)</p>
+							<p><strong>Target Roles:</strong> Technical Lead, Senior Backend Engineer, Cloud Architect, Platform Engineer, Staff Engineer.</p>
+							<p><strong>Core Stack:</strong> Python (6+ yrs), AWS Serverless (Lambda, API Gateway, DynamoDB, Kinesis, S3 — 4+ yrs), FastAPI, Django, PostgreSQL, Docker, Terraform, Git, System Design, API Design, ETL Pipelines, Telecom, IoT.</p>
+							<p><strong>Education:</strong> B.Tech CSE, Dr. A.P.J. Abdul Kalam Technical University (2016–2020).</p>
+							<p><strong>Languages:</strong> English (Professional), Hindi (Native).</p>
+							<p><strong>LinkedIn:</strong> linkedin.com/in/ram-mohan-kunwar | <strong>GitHub:</strong> github.com/ramm8469</p>
+						</div>
+					</details>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<div id="fh5co-footer">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 text-center">
@@ -540,5 +678,20 @@
 	<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"9e58c8a84d674b539dd0754d63095855","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 
 
-	</body>
+	
+		<!-- Nav Toggle -->
+		<script>
+		(function() {
+			var toggle = document.querySelector('.nav-toggle');
+			var links = document.querySelector('.nav-links');
+			if (toggle && links) {
+				toggle.addEventListener('click', function() { links.classList.toggle('open'); });
+				links.querySelectorAll('a').forEach(function(a) {
+					a.addEventListener('click', function() { links.classList.remove('open'); });
+				});
+			}
+		})();
+		</script>
+
+</body>
 </html>

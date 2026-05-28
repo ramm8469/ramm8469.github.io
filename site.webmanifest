@@ -1,0 +1,21 @@
+{
+  "name": "Ram Mohan Kunwar | Technical Lead & Backend Architect",
+  "short_name": "RMK Portfolio",
+  "description": "Technical Lead and Backend Architect with 5+ years building cloud-native, high-throughput systems.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#FF9000",
+  "icons": [
+    {
+      "src": "/images/DSC_2744.JPG",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "/images/DSC_2744.JPG",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
